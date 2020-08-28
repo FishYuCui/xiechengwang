@@ -1,0 +1,76 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+div {
+    box-sizing: border-box;
+}
+/* 搜索模块 */
+.search{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    min-width: 320px;
+    max-width: 540px;
+    height: 44px;
+    /* background: #000; */
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    
+
+}
+.search .search-left{
+    flex: 1;
+    border: 1px solid #ccc;
+    height: 26px;
+    margin: 7px 10px;
+    border-radius: 5px;
+}
+.search-left::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/sprite.png) no-repeat;
+}
+.search .search-right{
+    width: 44px;
+    height: 44px;
+    /* background-color: aqua; */
+    text-align: center;
+    font-size: 12px;
+    color: #2eaae0;
+
+}
+.search-right::before{
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprite.png) no-repeat -59px -194px;
+    background-size: 104px;
+    margin: 4px auto -2px;
+
+}
